@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/data_penduduk"
+
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Teks1"
+        android:textColor="@color/text_color2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/data_anda"
+        android:textColor="@color/text_color2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/hs_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            android:drawableEnd="@drawable/ic_nik"
+            android:enabled="false"
+            android:hint="@string/nik"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/hs_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_edittext"
+            android:drawableEnd="@drawable/ic_nama"
+            android:enabled="false"
+            android:hint="@string/nama"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:text="@string/tempat_lahir"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/hs_tempatlahir"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:background="@drawable/background_edittext"
+                android:drawableEnd="@drawable/ic_cek"
+                android:enabled="false"
+                android:hint="@string/tempat_lahir"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:text="@string/tanggal_lahir"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/hs_tanggallahir"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:background="@drawable/background_edittext"
+                android:drawableEnd="@drawable/ic_cek"
+                android:enabled="false"
+                android:hint="@string/tanggal_lahir"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:text="@string/alamat"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/hs_alamat"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:background="@drawable/background_edittext"
+                android:drawableEnd="@drawable/ic_cek"
+                android:enabled="false"
+                android:hint="@string/alamat"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="2dp"
+                android:text="@string/jenis_kelamain"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/hs_jeniskelamin"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:background="@drawable/background_edittext"
+                android:drawableEnd="@drawable/ic_cek"
+                android:enabled="false"
+                android:hint="@string/jenis_kelamain"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="2dp"
+                android:text="@string/pekerjaan"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/hs_pekerjaan"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:background="@drawable/background_edittext"
+                android:drawableEnd="@drawable/ic_cek"
+                android:enabled="false"
+                android:hint="@string/pekerjaan"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/status_perkawinan"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/hs_status"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:background="@drawable/background_edittext"
+                android:drawableEnd="@drawable/ic_cek"
+                android:enabled="false"
+                android:hint="@string/status_perkawinan"
+                android:inputType="textNoSuggestions"
+                android:padding="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_button"
+        android:text="@string/kembali"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

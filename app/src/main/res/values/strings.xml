@@ -1,0 +1,30 @@
+<resources>
+
+<!--    Text Code-Bima(20552011107)-->
+
+    <string name="app_name">Tugas01_BimaMaarschal_20552011107_TIFRP20CID</string>
+    <string name="Judul">Isi Data Penduduk</string>
+    <string name="Teks1">Data Utama</string>
+    <string name="teks2">Isi sesuai KTP</string>
+    <string name="nik">NIK</string>
+    <string name="nama">Nama</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="alamat">Alamat</string>
+    <string name="jenis_kelamain">Jenis Kelamin</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="status_perkawinan">Status</string>
+    <string name="kirim_data">Kirim Data</string>
+    <string name="data_penduduk">Data Penduduk</string>
+    <string name="data_anda">Data Anda</string>
+    <string name="button_tanggal">Button Tanggal</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="pegawai_negeri_sipil">Pegawai Negeri Sipil</string>
+    <string name="pegawai_swasta">Pegawai Swasta</string>
+    <string name="pelajar">Pelajar</string>
+    <string name="wiraswasta">Wiraswasta</string>
+    <string name="belum_kawin">Belum Kawin</string>
+    <string name="kawin">Kawin</string>
+    <string name="kembali">Kembali</string>
+</resources>
